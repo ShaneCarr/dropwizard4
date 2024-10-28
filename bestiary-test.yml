@@ -1,0 +1,22 @@
+# bestiary-test.yml
+
+# PostgreSQL Configuration for Testcontainers
+database:
+  driverClass: org.postgresql.Driver
+  user: postgres
+  password: password
+  url: jdbc:postgresql://localhost:5432/test-bestiary
+  # This URL will be dynamically overridden by Testcontainers during tests
+
+# Redis Configuration for Testcontainers
+redis:
+  host: localhost
+  port: 6379
+  # This port will be dynamically overridden by Testcontainers during tests
+
+# Azure Cosmos DB Configuration for Testcontainers
+cosmos:
+  endpoint: https://localhost:8081
+  masterKey: C2y6yDjf5/R+ob0N8A7Cgv30VRz97qRtW6+HdjMWxwvfJ5SRv8pneKvfbviYhHBqgYRuC0bL2HI1nE/RgOGkFg==
+  databaseName: test-witcher-bestiary
+  # Endpoint and credentials will be dynamically overridden by Testcontainers during tests
