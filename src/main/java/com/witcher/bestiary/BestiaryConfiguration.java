@@ -1,10 +1,12 @@
 package com.witcher.bestiary;
 
-import io.dropwizard.Configuration;
+import io.dropwizard.core.Configuration;
 import io.dropwizard.db.DataSourceFactory;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
+
+
 
 public class BestiaryConfiguration extends Configuration {
 
