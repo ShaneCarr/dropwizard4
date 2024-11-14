@@ -15,9 +15,15 @@
     <jdbi.version>3.35.0</jdbi.version>
     <testcontainers.version>1.20.3</testcontainers.version>
     <postgresql.version>42.6.0</postgresql.version>
+    <liquidbase.version>4.30.0</liquidbase.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <version>${liquidbase.version}</version> <!-- Use latest stable version -->
+    </dependency>
     <!-- Dropwizard Core -->
     <dependency>
       <groupId>io.dropwizard</groupId>
