@@ -1,2 +1,6 @@
-com/witcher/bestiary/BestiaryApplication.class
 com/witcher/bestiary/BestiaryConfiguration.class
+com/witcher/bestiary/models/Monster.class
+com/witcher/bestiary/BestiaryApplication.class
+com/witcher/bestiary/service/MonsterService.class
+com/witcher/bestiary/resources/MonsterResource.class
+com/witcher/bestiary/dao/MonsterDAO.class
