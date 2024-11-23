@@ -12,6 +12,10 @@ public class BestiaryConfiguration extends Configuration {
 
   @Valid
   @NotNull
+  private String databaseName;
+
+  @Valid
+  @NotNull
   private DataSourceFactory database = new DataSourceFactory();
 
   @JsonProperty("database")
@@ -24,6 +28,16 @@ public class BestiaryConfiguration extends Configuration {
     this.database = database;
   }
 
+  @JsonProperty("databaseName")
+  public String getDatabaseName() {
+    return databaseName;
+  }
+
+  @JsonProperty("databaseName")
+  public void setDatabaseName(String database) {
+    this.databaseName = database;
+  }
+
   // Redis configuration
   @NotNull
   private String redisHost;
@@ -31,22 +45,22 @@ public class BestiaryConfiguration extends Configuration {
   @NotNull
   private int redisPort;
 
-  @JsonProperty("redis")
+  @JsonProperty("redisHost")
   public void setRedisHost(String host) {
     this.redisHost = host;
   }
 
-  @JsonProperty("redis")
+  @JsonProperty("redisHost")
   public String getRedisHost() {
     return redisHost;
   }
 
-  @JsonProperty("redis")
+  @JsonProperty("redisPort")
   public void setRedisPort(int port) {
     this.redisPort = port;
   }
 
-  @JsonProperty("redis")
+  @JsonProperty("redisPort")
   public int getRedisPort() {
     return redisPort;
   }
@@ -61,32 +75,32 @@ public class BestiaryConfiguration extends Configuration {
   @NotNull
   private String cosmosDatabaseName;
 
-  @JsonProperty("cosmos")
+  @JsonProperty("cosmosEndpoint")
   public void setCosmosEndpoint(String endpoint) {
     this.cosmosEndpoint = endpoint;
   }
 
-  @JsonProperty("cosmos")
+  @JsonProperty("cosmosEndpoint")
   public String getCosmosEndpoint() {
     return cosmosEndpoint;
   }
 
-  @JsonProperty("cosmos")
+  @JsonProperty("cosmosMasterKey")
   public void setCosmosMasterKey(String masterKey) {
     this.cosmosMasterKey = masterKey;
   }
 
-  @JsonProperty("cosmos")
+  @JsonProperty("cosmosMasterKey")
   public String getCosmosMasterKey() {
     return cosmosMasterKey;
   }
 
-  @JsonProperty("cosmos")
+  @JsonProperty("cosmosDatabaseName")
   public void setCosmosDatabaseName(String databaseName) {
     this.cosmosDatabaseName = databaseName;
   }
 
-  @JsonProperty("cosmos")
+  @JsonProperty("cosmosDatabaseName")
   public String getCosmosDatabaseName() {
     return cosmosDatabaseName;
   }
