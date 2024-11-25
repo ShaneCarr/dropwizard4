@@ -1,7 +1,6 @@
 package com.witcher.bestiary;
 
 import com.witcher.bestiary.dao.MonsterDAO;
-import com.witcher.bestiary.models.Monster;
 import com.witcher.bestiary.resources.MonsterResource;
 import com.witcher.bestiary.service.MonsterService;
 import io.dropwizard.core.Application;

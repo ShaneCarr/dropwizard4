@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="witcher-bestiary" />
+        <module name="witcher-bestiary (1) (com.witcher.bestiary)" />
+        <module name="testutilities" />
       </profile>
     </annotationProcessing>
   </component>

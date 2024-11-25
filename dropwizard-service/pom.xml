@@ -19,7 +19,11 @@
     <junit.version>5.10.0</junit.version>
     <junit.platform.version>1.10.0</junit.platform.version>
   </properties>
-
+  <parent>
+    <groupId>com.witcher</groupId>
+    <artifactId>witcher-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
   <dependencyManagement>
     <dependencies>
       <dependency>
