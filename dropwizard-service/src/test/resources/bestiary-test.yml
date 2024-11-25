@@ -15,3 +15,10 @@ redisPort: 6379
 cosmosEndpoint: https://localhost:8081
 cosmosMasterKey: C2y6yDjf5/R+ob0N8A7Cgv30VRz97qRtW6+HdjMWxwvfJ5SRv8pneKvfbviYhHBqgYRuC0bL2HI1nE/RgOGkFg==
 cosmosDatabaseName: test-witcher-bestiary
+
+logging:
+  level: DEBUG
+  appenders:
+    - type: console
+      threshold: DEBUG
+      target: stdout
