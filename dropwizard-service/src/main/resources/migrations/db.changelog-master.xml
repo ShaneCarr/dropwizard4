@@ -6,6 +6,5 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <!-- Include individual changelogs -->
-    <include file="changelog/migrations/01_create_monster_table.xml" relativeToChangelogFile="true"/>
-    <include file="changelog/migrations/02_add_additional_fields.xml" relativeToChangelogFile="true"/>
+    <include file="01_create_monster_table.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>

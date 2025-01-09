@@ -15,6 +15,9 @@
             </column>
             <column name="type" type="VARCHAR(255)"/>
             <column name="habitat" type="VARCHAR(255)"/>
+            <column name="imageurl" type="TEXT"/>
+            <column name="difficultylevel" type="TEXT"/>
+            <column name="lore" type="TEXT"/>
             <column name="strengths" type="TEXT"/>
             <column name="weaknesses" type="TEXT"/>
             <column name="description" type="TEXT"/>

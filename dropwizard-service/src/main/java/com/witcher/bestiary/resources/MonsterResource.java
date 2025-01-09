@@ -32,7 +32,10 @@ public class MonsterResource {
   }
 
   @POST
-  public Response addMonster(Monster monster) {
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response createMonster(Monster monster) {
+    // Add logic to handle the request
     monsterService.addMonster(monster);
     return Response.status(Response.Status.CREATED).entity(monster).build();
   }
